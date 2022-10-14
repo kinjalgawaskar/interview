@@ -1,0 +1,36 @@
+body { margin:90px; }
+
+.shockeffect{
+  width: center;
+  margin: 0 auto;
+  position: center; 
+  -webkit-transform-style: preserve-3d;
+  height: 1000px;
+  
+  text-align: absolute;
+}
+
+
+.moduleAnimationShock .bd:hover {
+  position: absolute;
+  background-color: rgb(140, 255, 0);
+  width: absolute;
+  height: 500px;
+}
+
+.moduleAnimationShock .bd:hover {
+  animation-name: diagonal-slide;
+  animation-duration: 0.05s;
+  animation-iteration-count: 10;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes diagonal-slide {
+ 
+  from { top: 0; left: 0; animation-timing-function: r; }
+  20% { top: -5px; left: -5px; animation-timing-function: linear; }
+  40% { top: 5px; left: -5px; animation-timing-function: linear; }
+  60% { top: 5px; left: 5px; animation-timing-function: linear; }
+  80% { top: -5px; left: 5px; animation-timing-function: linear; }
+  to { top: 0; left: 0; animation-timing-function: linear; }
+}
